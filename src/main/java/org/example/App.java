@@ -11,13 +11,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        //Get user input on weight/height
         Scanner scanner = new Scanner(System.in);
+
+        //Get user input on weight/height
         System.out.print("Enter your weight in pounds: ");
         String strWeight = scanner.next();
         System.out.print("Enter your height in inches: ");
         String strHeight = scanner.next();
 
+        //Ensures correct input
         if((!strWeight.matches("[0.0-9.0]+")) || (!strHeight.matches("[0.0-9.0]+"))) {
             System.out.println("Invalid input");
         } else {
